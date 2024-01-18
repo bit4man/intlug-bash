@@ -8,17 +8,16 @@ function echodo() {
   $*
 }
 
-echodo $cmd se $DATA
+echodo $cmd [ab] $DATA
 
-echodo $cmd "\<se" $DATA
+echodo $cmd [^ab] $DATA
 
-echodo $cmd ".\>" $DATA
+echodo $cmd [a-z] $DATA
 
-echodo $cmd "\b." $DATA
+echodo $cmd [^a-z] $DATA
 
-echodo $cmd "\B." $DATA
+echodo $cmd [a-z-] $DATA
 
-echodo $cmd "\w" $DATA
+echodo $cmd [[:alnum:]] $DATA
 
-echodo $cmd "\W" $DATA
-
+echodo $cmd . $DATA
